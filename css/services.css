@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgcolor1: rgba(201, 165, 129, 1);
+  --bgcolor2: rgba(228, 204, 180, 1);
+  --bgcolor3: #121d23;
+  --font-jost: "Jost", sans-serif;
+  --font-forum: "Forum", serif;
+}
+
+/* banner style ==============================*/
+.services-content .services-banner {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.79) 50%,
+      rgba(0, 0, 0, 0.79) 100%
+    ),
+    url("../assets/images/bakery-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 70vh;
+  width: 100%;
+  padding: 30px 50px;
+}
+
+.services-banner .banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-family: var(--font-jost);
+  gap: 5px;
+}
+
+.services-banner .banner-content h2 {
+  font-family: var(--font-forum);
+  font-size: 4.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.banner-content .breadCrumbs {
+  display: flex;
+  gap: 10px;
+}
+
+.banner-content .breadCrumbs li a {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+.banner-content .breadCrumbs li {
+  list-style: none;
+  font-size: 18px;
+}
+
+.services-banner .backMenu i {
+  color: #fff;
+  font-size: 25px;
+}
+/* banner style end ==========================*/
+
+/* card style ================================*/
+.services-content .services-cards {
+  background-color: #121d23;
+  padding: 50px;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  font-family: var(--font-jost);
+}
+
+.services-cards .common {
+  border: 1px solid rgb(201 165 129 / 30%);
+  padding: 20px 30px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+
+.common .card-icon {
+  background-color: #283f4c;
+  color: var(--bgcolor1);
+  width: fit-content;
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+}
+
+.common .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.common .card-content h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.common .card-content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #cfcfcf;
+}
+
+/* card style end ============================*/
+
+/* we offer style ============================*/
+.services-content .we-offer {
+  background-image: url("../assets/images/about-bg-image.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: var(--bgcolor3);
+}
+
+.we-offer .we-offer-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 50px;
+  color: white;
+  font-family: var(--font-jost);
+}
+
+.we-offer-img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.we-offer-img .offer-main-img img {
+  width: 450px;
+  border-radius: 200px 200px 0 0;
+}
+
+.we-offer-img .offer-img-1 img,
+.we-offer-img .offer-img-2 img {
+  border-radius: 50%;
+  border: 8px solid #fff;
+  width: 150px;
+}
+
+.we-offer-img .offer-img-1 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.we-offer-img .offer-img-2 {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+
+.we-offer-contents .we-offer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.we-offer-details .we-offer-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.we-offer-title .we-offer-icon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.we-offer-details .we-offer-title h2 {
+  font-family: var(--font-forum);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.we-offer-details .we-offer-title p {
+  font-size: 18px;
+  color: #cfcfcf;
+  font-weight: 400;
+}
+
+.accordion {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accordion-content header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+}
+
+.accordion-content header i {
+  font-size: 20px;
+  color: var(--bgcolor1);
+  transition: transform 0.3s ease;
+}
+
+.accordion-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.accordion-description {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease, padding 0.3s ease;
+  padding: 0 0;
+}
+
+.accordion-content.is-open header i.fa-plus {
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-content.is-open header i.fa-minus {
+  transform: rotate(180deg);
+}
+
+.accordion-content.is-open .accordion-description {
+  padding: 8px 0;
+  height: 45px;
+}
+
+.we-offer-details .offer-button button {
+  padding: 10px 15px;
+  background: linear-gradient(90deg, var(--bgcolor1) 0%, var(--bgcolor2) 100%);
+  border-radius: 100px;
+  color: #000000;
+  border: var(--bgcolor1) 1px solid;
+  font-size: 18px;
+  font-family: var(--font-jost);
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+
+/* we offer style end ========================*/
+
+/* footer section =============================*/
+footer {
+  background: #000;
+  font-family: var(--font-jost);
+  color: #fff;
+}
+
+.footer-content {
+  padding: 40px 50px;
+}
+
+.footer-content .footer-communication {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.footer-communication > div {
+  padding: 20px;
+}
+
+.footer-content .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.footer-communication .common-style i {
+  color: var(--bgcolor1);
+  font-size: 50px;
+}
+.footer-communication .common-style {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-bottom .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-content .bottom-line {
+  position: relative;
+  padding: 40px 0;
+}
+
+.footer-content .bottom-line::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgb(201 165 129 / 33%);
+  border-radius: 10px;
+}
+
+.footer-bottom .footer-logo h3 {
+  font-size: 20px !important;
+  font-family: var(--font-jost);
+  color: var(--bgcolor1);
+}
+
+.footer-communication .address {
+  position: relative;
+}
+
+.footer-communication .address::after {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 1px;
+  left: 75%;
+  top: 50%;
+  background-color: rgb(201 165 129 / 33%);
+  border-radius: 10px;
+  transform: rotate(90deg);
+}
+
+.footer-communication .address::before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 1px;
+  right: 75%;
+  top: 50%;
+  background-color: rgb(201 165 129 / 33%);
+  border-radius: 10px;
+  transform: rotate(90deg);
+}
+
+.common-style h3 {
+  font-size: 1.9rem;
+  color: var(--bgcolor1);
+  font-family: var(--font-forum);
+  font-weight: 500;
+}
+
+.footer-communication .contact.common-style a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-communication .common-style .footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-family: var(--font-forum);
+}
+
+.common-style .footer-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-communication .common-style button {
+  position: relative;
+  padding: 10px 25px;
+  background: transparent;
+  border-radius: 100px;
+  overflow: hidden;
+  color: var(--bgcolor1);
+  border: var(--bgcolor1) 1px solid;
+  font-size: 18px;
+  font-family: var(--font-jost);
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer-communication .common-style button:hover {
+  color: #000;
+  border: 0;
+  z-index: 1;
+  cursor: pointer;
+  border: transparent 1px solid;
+}
+
+.footer-communication .common-style button::before {
+  content: "";
+  position: absolute;
+  border-radius: 100px;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(90deg, var(--bgcolor1) 0%, var(--bgcolor2) 100%);
+  transition: transform 0.4s ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.footer-communication .common-style button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.footer-bottom .footer-social-media {
+  display: flex;
+  gap: 15px;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom .footer-social-media .social-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--bgcolor1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 998px) {
+  .footer-communication .address::before,
+  .footer-communication .address::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content .footer-communication {
+    flex-direction: column;
+  }
+
+  .footer-content .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+  }
+
+  .footer-communication .common-style i {
+    font-size: 25px;
+  }
+
+  .common-style h3 {
+    font-size: 1rem;
+  }
+
+  .footer-communication .common-style button {
+    padding: 5px 15px;
+    font-size: 15px;
+  }
+
+  .footer-logo img {
+    width: 50px;
+  }
+
+  .footer-bottom .footer-social-media .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-banner .banner-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .banner-content .breadCrumbs li {
+    font-size: 15px;
+  }
+
+  .about-content .about-banner {
+    height: 40vh;
+  }
+
+  .services-banner .backMenu i {
+    font-size: 20px;
+  }
+}
+/* footer section end =========================*/
+
+/* media query ===============================*/
+@media screen and (max-width: 1024px) {
+  .services-content .services-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .we-offer .we-offer-contents {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-banner .banner-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .banner-content .breadCrumbs li {
+    font-size: 15px;
+  }
+
+  .services-content .services-banner {
+    height: 40vh;
+  }
+
+  .services-content .services-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .services-cards .common {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .services-banner .banner-content h2 {
+    font-size: 1.9rem;
+  }
+
+  .services-banner .backMenu i {
+    font-size: 20px;
+  }
+
+  .services-content .services-banner {
+    padding: 30px 25px;
+  }
+
+  .common .card-content p {
+    font-size: 14px;
+  }
+
+  .common .card-content h3 {
+    font-size: 22px;
+  }
+}
+/* media query end ===========================*/
