@@ -1388,9 +1388,19 @@ footer {
   font-weight: 500;
 }
 
-.footer-communication .contact.common-style a {
+.footer-communication .common-style a {
   text-decoration: none;
   color: #fff;
+}
+
+.footer-communication .common-style button a {
+  color: var(--bgcolor1);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-communication .common-style button:hover a {
+  color: #000;
 }
 
 .footer-communication .common-style .footer-text {
