@@ -614,6 +614,57 @@
   }
 }
 
+@media screen and (max-width: 468px) {
+  .about-right .open-timing {
+    height: 165px !important;
+    width: 180px !important;
+  }
+
+  .about-right .open-timing {
+    bottom: 15px;
+    left: -40px;
+  }
+
+  .activities .item-1-content p,
+  .activities .item-2-content p,
+  .open-timing .timings > :nth-child(1),
+  .open-timing .timings > :nth-child(2),
+  .open-timing h2 {
+    font-size: 11px !important;
+  }
+
+  .pricing-content .title h3,
+  .testiContent h3,
+  .success-content .title h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .success-content .title .icon-title h3 {
+    font-size: 18px !important;
+  }
+
+  .item1 .content .itemTitle > :first-child,
+  .item1 .content .itemTitle > :nth-child(2) {
+    font-size: 16px !important;
+  }
+
+  .item1 .content > :nth-child(2), .testContainer li p{
+    font-size: 15px !important;
+  }
+
+  .foodItems .item1 img {
+    width: 75px !important;
+  }
+
+  .silder-content ul.testContainer {
+    padding: 0 !important;
+  }
+
+  .pricing-content .tab {
+    gap: 10px !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .banner-content .coffee-quote {
     font-size: 13px;
@@ -689,7 +740,7 @@
   .open-timing .timings > :nth-child(1),
   .open-timing .timings > :nth-child(2),
   .open-timing h2 {
-    font-size: 15px !important;
+    font-size: 15px;
   }
 
   .open-timing i {
@@ -702,8 +753,8 @@
   }
 
   .about-right .open-timing {
-    height: 200px !important;
-    width: 255px !important;
+    height: 200px ;
+    width: 255px ;
   }
 }
 /* media query end ==========*/
@@ -881,14 +932,6 @@
 
   .success-section .success-content {
     gap: 50px;
-  }
-
-  .success-content .title .icon-title h3 {
-    font-size: 18px;
-  }
-
-  .success-content .title h2 {
-    font-size: 2rem;
   }
 }
 /* success section end =================*/
@@ -1083,8 +1126,10 @@
 @media screen and (max-width: 768px) {
   .pricing-content .tab button,
   .tab button.tablinks.active {
-    padding: 5px 15px;
-    font-size: 17px;
+    padding: 5px 35px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
   }
 
   .pricing-content .title h3 {
