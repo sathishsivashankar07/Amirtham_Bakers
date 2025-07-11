@@ -8,7 +8,7 @@
 }
 
 :root {
-  --bgcolor1: rgba(201, 165, 129, 1);
+  --bgcolor1: rgb(201, 166, 130);
   --bgcolor2: rgba(228, 204, 180, 1);
   --bgcolor3: #121d23;
   --font-jost: "Jost", sans-serif;
